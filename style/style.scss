@@ -4,46 +4,4 @@
 @import '_header';
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 // Custome Properties
-// Colors
 
-// Primary
-
-// (CTA text)
-$Light-red : hsl(356, 100%, 66%);
-// (CTA hover background)
-$Very-light-red: hsl(355, 100%, 74%);
-// (headings)
-$Very-dark-blue : hsl(208, 49%, 24%);
-
-//  Neutral
-// (text)
-$White : hsl(0, 0%, 100%);
-// (footer text)
-$Grayish-blue: hsl(240, 2%, 79%);
-// (body copy)
-$Very-dark-grayish-blue: hsl(207, 13%, 34%);
-// (footer background)
-$Very-dark-black-blue: hsl(240, 10%, 16%);
-
-// Background gradient - Intro/CTA mobile nav:
-
-$Very-light-red: hsl(13, 100%, 72%);
-$Light-red: hsl(353, 100%, 62%);
-
-// Background gradient - body:
-
-$Very-dark-gray-blue: hsl(237, 17%, 21%);
-$Very-dark-desaturated-blue: hsl(237, 23%, 32%);
-
-// Fonts
-//Font Size
-$base-font-size: 16px;
-
-//Font Families
-
-// Overpass
-$overpass:  'Overpass', sans-serif;
-
-// Ubuntu
-$ubuntu:'Ubuntu', sans-serif;
-// Font Weight
