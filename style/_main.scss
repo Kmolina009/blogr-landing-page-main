@@ -1,0 +1,48 @@
+main{
+    section{
+        font-family:$overpass;
+        text-align: center;
+        font-weight: 600;
+        h1,h2{
+            color: $Very-dark-blue;
+        }
+        p{
+            color:$Grayish-blue;
+            margin: 0 5%;
+            font-size: $base-font-size;
+            line-height: 24px;
+        }
+    }
+    section:nth-child(2){
+        // Contents are 796px in total height
+        // margin-top: 143px; //This pushes down the lower half of the elements, shifts vertically based on screen size
+        // margin-top: 33.7%; 
+        height:615px;
+        div:nth-child(1){
+            position: absolute;
+            top: 1653px;
+            margin-top: 10px;
+            margin-bottom: 40%;
+            height: 574px;
+            // background-color: $Very-dark-gray-blue;
+            border-radius: 0px 102px 0px 102px;
+            background-color: $Very-dark-gray-blue;
+            background-image: url('/images/bg-pattern-circles.svg');
+            background-size: 454px ;
+            background-position: -82px -159px ;
+            background-repeat: no-repeat;
+            h2{
+                position: relative;
+                top: 176px;
+                color: $White;
+            }
+            p{
+                position: relative;
+                top: 176px;
+            }
+        }
+    }
+    section:nth-child(3){
+        margin-top: 139%;
+    }
+}

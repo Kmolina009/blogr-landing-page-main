@@ -1,0 +1,29 @@
+div[data-image="designUI"]{
+    // margin: 0 auto;
+    min-height:288px;
+    min-width: 288px;
+    background-image: url('/images/illustration-editor-mobile.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+div[data-image="phones"]{
+    position: absolute;
+    top: 1520px;
+    width: 288px;
+    min-height:288px;
+    background-image: url('/images/illustration-phones.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+div[data-image="laptop"]{
+    position: absolute;
+    top: 2243px;
+    margin: 0 10%;
+    min-height:288px;
+    min-width: 288px;
+    //Edit the SVG(or figure out how it works)
+    background-image: url('/images/illustration-laptop-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}

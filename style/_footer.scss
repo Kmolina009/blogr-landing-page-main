@@ -1,0 +1,47 @@
+//Todo, Continue centering these elements.
+    //Followed by extending the footer to include the attribution class
+@import 'custom-properties';
+footer{
+    position: relative;
+    top: 31px;
+    background-color: $Very-dark-gray-blue;
+    border-radius: 0px 75px 0px 0px;
+    height: 622px;
+    img{
+        position: relative;
+        top: 50px;
+        margin: 0 34%;
+    }
+        .footer-nav-container{
+            position: relative;
+            top: 50px;
+            text-align: center;
+                section{
+                    h4{
+                        font-weight: 600;
+                    }
+                    h4,ul {
+                        color: $White;
+                        font-family: $overpass;
+                        text-align: center;
+                        padding: 0;
+                        padding-inline-start: 0px;
+                    }
+                    ul {
+                        list-style-type: none;
+                        li {
+                            margin-bottom: 7px;
+                            a{
+                                color: $White;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+        }
+        div{
+            position: relative;
+            top: 50px;
+        }
+
+    }
