@@ -17,41 +17,52 @@
   <header>
     <nav>
       <!-- Logo and hamburger menu(cotents currently commented out) -->
-        <!-- <section> -->
+       <section> 
+          <!-- Show only when mobile -->
       <figure>
         <img src="./images/logo.svg" alt="Blogr" data-image="Blogr">
       </figure> 
       <figure>
         <img src="./images/icon-hamburger.svg" alt="Menu" data-image="hamB-Menu">
-      </figure>
-      <!-- <div class="dropdown-content">
-        <a href="">Overview</a>
-        <a href="">Pricing</a>
-        <a href="">Marketplace</a>
-        <a href="">Features</a>
-        <a href="">Integrations</a>
-      </div>  -->
+      </figure> 
       <!-- </section> -->
-        <!-- <section>
-          <div>Company</div>
-          <div class="dropdown-content">
-            <a href="">About</a>
-            <a href="">Team</a>
-            <a href="">Blog</a>
-            <a href="">Careers</a>
+      <!-- TODO Build out the mobile/desktop drop down -->
+         <section class="drop-down-selection">
+          <div>
+            <p>Products</p>
+            <div class="toggle-status"></div>
           </div>
-        </section> -->
-        <!-- <section> -->
-          <!-- <div></div> -->
-          <!-- Connect -->
-          <!-- <div class="dropdown-content">
+          <div class="dropdown-content">
+            <a href="">Overview</a>
+            <a href="">Pricing</a>
+            <a href="">Marketplace</a>
+            <a href="">Features</a>
+            <a href="">Integrations</a>
+          </div> 
+        </section> 
+         <section class="drop-down-selection">
+          <div>
+            <p>Company</p>
+            <div class="toggle-status"></div>
+          </div>
+          <div class="dropdown-content">
             <a href="">Contact</a>
             <a href="">Newsletter</a>
             <a href="">LinkedIn</a>
-          </div> -->
-        <!-- </section>
-      <div><a href="">Login</a></div>
-      <div><a href="">Sign Up</a></div> -->
+          </div>
+        </section> 
+        <section class="drop-down-selection">
+          <div><p>Connect</p>
+            <div class="toggle-status"></div>
+          </div>
+          <div class="dropdown-content">
+            <a href="">Contact</a>
+            <a href="">Newsletter</a>
+            <a href="">LinkedIn</a>
+          </div>
+        </section> 
+      <div class="href-btn" data-acct-btn="login"><a href="#">Login</a></div>
+      <div class="href-btn" data-acct-btn="sign-up"><a href="#">Sign Up</a></div> 
     </nav>
   <!-- mission statement -->
   <div>
@@ -59,10 +70,10 @@
     <h2>Grow your audience and build your online brand</h2>
     <!-- Btn's -->
     <div class="btn-container">
-      <div class=href-btn>
+      <div class="href-btn">
         <p>Start for Free</p>   
       </div>
-      <div class=href-btn>
+      <div class="href-btn">
         <p>Learn More</p>
       </div>
     </div>
