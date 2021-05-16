@@ -16,6 +16,7 @@ header{
             justify-content: space-between;
     }
     nav{
+        left:auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -86,11 +87,12 @@ header{
     //Styling must work between  1440px and 1024(The stretch goal will be making it work at 4k)
 @media screen and (min-width:$desktop)  {
     header{
-        margin: 0 auto;
+        // margin: 0 auto;
         nav{
-            // width: 60.75%;
+            // position: relative;
+            // left: 5%;
             width: 78.75%;
-            margin: 0 auto;
+            // margin: 0 auto;
           figure{
               height: 42px;
             img[data-image="Blogr"]{
@@ -101,7 +103,8 @@ header{
 
             }
             section{
-                justify-content: flex-start;
+                justify-content: center;
+                width: 84%;
             }
           [data-image="hamB-Menu"]{
               display: none;
