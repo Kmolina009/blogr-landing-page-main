@@ -9,6 +9,12 @@ header{
     background-position: 35% 39%;
     position: relative;
     border-radius: 0px 0px 0px 82px;
+    section{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    }
     nav{
         display: flex;
         flex-direction: row;
@@ -21,10 +27,16 @@ header{
         figure{
            [data-image="Blogr"]{
                 height: 100%
-            };
+            }
             [data-image="hamB-Menu"]{
                 height: 60%
-            };
+            }
+        }
+        .drop-down-selection{
+            display: none;
+        }   
+        div{
+            display: none
         }
     }
     div{
@@ -66,5 +78,132 @@ header{
                 box-sizing: border-box;
             }
         }
+    }
+}
+
+//*********************************************Media Query for Desktops**************************************************
+
+    //Styling must work between  1440px and 1024(The stretch goal will be making it work at 4k)
+@media screen and (min-width:$desktop)  {
+    header{
+        margin: 0 auto;
+        nav{
+            // width: 60.75%;
+            width: 78.75%;
+            margin: 0 auto;
+          figure{
+              height: 42px;
+            img[data-image="Blogr"]{
+                height: 100%;              
+                position: relative;
+                bottom: 26%;
+            }
+
+            }
+            section{
+                justify-content: flex-start;
+            }
+          [data-image="hamB-Menu"]{
+              display: none;
+        }
+        .drop-down-selection{
+            display: block;
+            position: relative;
+            left: 35px;
+            width: 90px;
+            p{
+                display: inline;
+                margin: 0;
+            }
+            .toggle-status{
+                position: relative;
+                bottom: 12px;
+                left:80px;
+                margin: 0px;
+                height: 7px;
+                // width: 10px;
+                background-image: url("/images/icon-arrow-light.svg");
+                background-size: 10px 7px;
+
+                background-repeat: no-repeat;
+            }
+            .dropdown-content{
+                display: none;
+            }
+            // Login Btn's
+            // div{
+
+            // }
+        }   
+        div{
+            display: block;
+            position: relative;
+            left: 0px;
+        }
+        .href-btn{
+            display: block;
+            position: relative;
+            left: 40%;
+            margin: 0px 15px;
+            line-height: 50px;
+            a{
+                font-family: $overpass;
+                font-weight: 600;
+                text-decoration: none;
+                text-decoration-color: none;
+            }
+        }
+        .href-btn:nth-child(2){
+            display: block;
+            position: relative;
+            left: 40%;
+            width: 138px;
+            height: 49px;
+            margin: 0px 15px;
+            background-color: $White;
+            
+        }
+        div[data-acct-btn="login"]{
+            width: 138px;
+            height: 49px;
+            border-radius: 30rem;
+            // color:white;
+            a:link,a:visited{
+                color: $White;
+            }
+        }
+        div[data-acct-btn="sign-up"]{
+            width: 138px;
+            height: 49px;
+            background-color:$White; 
+            border-radius: 30rem;
+            a:link,a:visited{
+                color: $Light-red;
+            }
+        }
+
+        }
+        //Selects non-nav header content
+        div:nth-child(2){
+            h1{
+                font-size: 61px;
+            }
+            h2{
+                font-size: 18px;
+            }
+            .btn-container{
+                position: relative;
+               left: 40%;
+               right: 40%; 
+                margin-top: 5%;
+                width: 20%;
+
+                .href-btn{
+                    margin-left: 3%;
+                    margin-right: 3%;
+                }
+            }
+        }
+
     }
 }
