@@ -72,7 +72,8 @@ main{
                 div[data-image="designUI"]{
                     position: absolute;
                     top: 524px;
-                    left: 664px;
+                    left: 788px;
+                    // left: 718px;
                     height: 822px;
                     width: 724px;
                     margin: 0px;
@@ -100,7 +101,43 @@ main{
                     }
                 }  
             }
-
+        }
+        section:nth-child(2){
+            div:nth-child(1){
+            margin-top: 330px;
+            background-color: aqua;
+            position: absolute;
+            top: 1350px;
+            margin-top: 10px;
+            margin-bottom: 40%;
+            height: 395px;
+            width: 100%;
+            border-radius: 0px 102px 0px 102px;
+            background-color: #2c2d3f;
+            background-image: url(/images/bg-pattern-circles.svg);
+            background-size: 1013px;
+            background-position: -176px -489px;
+            background-repeat: no-repeat;
+            h2{
+                top: 6rem;
+                left: 16rem;
+                font-size: 2.55rem;
+            }
+            p{
+                position: relative;
+                top: 5rem;
+                left: 39.9rem;
+                text-align: left;
+                width: 31rem;
+            }
+            }        
+            // TODO Resize this element and the circles jpeg to match wireframe
+            div[data-image="phones"]{
+                top: 1312px;
+                left: 8rem;
+                height: 550px;
+                width: 550px;
+            }
         }
     }
 
