@@ -1,9 +1,15 @@
+@import url("./style.scss");
 main{
     section{
         font-family:$overpass;
         text-align: center;
         font-weight: 600;
-        h1,h2{
+        h1{
+            position: relative;
+            top: 64px;
+        }
+        div{
+            h1,h2{
             color: $Very-dark-blue;
         }
         p{
@@ -12,6 +18,8 @@ main{
             font-size: $base-font-size;
             line-height: 24px;
         }
+    }
+        
     }
     section:nth-child(2){
         // Contents are 796px in total height
@@ -45,4 +53,55 @@ main{
     section:nth-child(3){
         margin-top: 139%;
     }
+}
+@media screen and (min-width:$desktop){
+    main{
+        section{
+            display: flex;
+            flex-direction: column;
+            h1{
+                position: relative;
+                top: 93px;
+            }
+            .content-container{
+                // position: relative;
+                // top: 50px;
+                // display: block;
+                display: flex;
+                flex-direction: row-reverse;
+                div[data-image="designUI"]{
+                    position: absolute;
+                    top: 524px;
+                    left: 664px;
+                    height: 822px;
+                    width: 724px;
+                    margin: 0px;
+                    background-size: 799px 801px;
+                    background-position: 143px 20px;
+                    background-image: url(/images/illustration-editor-desktop.svg);
+                }
+                .sub-section{
+                    position: relative;
+                    top: 139px;
+                    right: 750px;
+                    width: 36%;
+                    margin: 0 0;
+                    text-align: left;
+                    h2{
+                        font-size: 29px;
+                    }
+                    p{
+                        
+                        margin: 0 0 0 0;
+                    }
+
+                    p:nth-child(2){
+                        margin: 0 0 65px 0;
+                    }
+                }  
+            }
+
+        }
+    }
+
 }
