@@ -143,6 +143,7 @@ header{
             position: relative;
             left: 0px;
         }
+        //Nav Btn's
         .href-btn{
             display: block;
             position: relative;
@@ -196,10 +197,13 @@ header{
             }
             .btn-container{
                 position: relative;
-               left: 40%;
-               right: 40%; 
+                // left: 40%;
+                // right: 40%; 
                 margin-top: 5%;
-                width: 20%;
+                margin-left: 0px;
+                margin-right: 0px;
+                // width: 20px;
+                width: 20rem;
 
                 .href-btn{
                     margin-left: 3%;
