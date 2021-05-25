@@ -61,39 +61,44 @@ main{
             flex-direction: column;
             h1{
                 position: relative;
-                top: 93px;
+                top: 6rem;
             }
             .content-container{
-                // position: relative;
-                // top: 50px;
-                // display: block;
-                display: flex;
+                display: flexbox;
                 flex-direction: row-reverse;
+                justify-content: start;
+                justify-content: space-evenly;
+                width: 100vw;
+                height: 100vh;
                 div[data-image="designUI"]{
-                    position: absolute;
-                    top: 524px;
-                    left: 253px;
-                    // left: 718px;
-                    height: 822px;
-                    width: 724px;
-                    margin: 0px;
-                    background-size: 799px 801px;
-                    background-position: 143px 20px;
+                    float: right;
+                    left: 32rem;                
+                    height: 50rem;
+                    width: 35rem;
+                    margin: 0rem 0rem 3rem 0rem;
+                    background-size: 52rem 50rem;
+                    background-position: -2rem 0rem;
                     background-image: url(/images/illustration-editor-desktop.svg);
                 }
                 .sub-section{
+                    display: block;
                     position: relative;
-                    top: 139px;
-                    right: 750px;
-                    width: 36%;
-                    margin: 0 0;
+                    top: 12rem;
+                    // right: 22rem;
+                    // right: 24%;
+                    // right: 46%;
+                    width: 33rem;
+                    margin: 0rem 0rem 0rem 6rem;
+                    padding: 0;
                     text-align: left;
                     h2{
-                        font-size: 29px;
+                        // font-size: 29px;
+                        font-size: 1.6rem;
                     }
                     p{
                         
                         margin: 0 0 0 0;
+                        font-size: 1rem;
                     }
 
                     p:nth-child(2){
@@ -107,7 +112,7 @@ main{
             margin-top: 330px;
             background-color: aqua;
             position: absolute;
-            top: 1350px;
+            top: 1443px;
             margin-top: 10px;
             margin-bottom: 40%;
             height: 395px;
@@ -119,26 +124,53 @@ main{
             background-position: -176px -489px;
             background-repeat: no-repeat;
             h2,p{
+                
                 text-align: left;
                 top: 6rem;
-                left: 0rem;
-                margin-left: 31rem;
+                //Better percentage works better than rem in maintaining proportional distance
+                margin-left: 52%;
             }
             h2{
                 font-size: 1.55rem;
                 width: 50%;
             }
             p{
+                font-size: 1.2rem;
                 width: 31rem;
+
             }
             }        
             // TODO Resize this element and the circles jpeg to match wireframe
             div[data-image="phones"]{
                 // top: 1312px;
-                top: 80rem;
+                top: 85rem;
                 left: 2rem;
                 height: 100%;
                 width: 45%;
+            }
+        }
+        section:nth-child(3){
+            margin: 22rem 0 0 0;
+            height: 38rem;
+            flex-direction: row;
+            div[data-image="laptop"]{
+                display: block;
+                float: left;
+                top: 119rem;
+                height: 127.5%;
+                width: 37%;
+                margin: 0;
+                background-size: 47rem;
+                background-position: 98% 62%;
+            }
+            .sub-section{
+                left: 0;
+                text-align: left;
+                width: 35rem;
+                margin: 0 0 0 52%;
+                p{
+                    margin: 0;
+                }
             }
         }
     }
