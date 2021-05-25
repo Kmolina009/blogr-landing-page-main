@@ -17,41 +17,52 @@
   <header>
     <nav>
       <!-- Logo and hamburger menu(cotents currently commented out) -->
-        <!-- <section> -->
+       <section> 
+          <!-- Show only when mobile -->
       <figure>
         <img src="./images/logo.svg" alt="Blogr" data-image="Blogr">
       </figure> 
       <figure>
         <img src="./images/icon-hamburger.svg" alt="Menu" data-image="hamB-Menu">
-      </figure>
-      <!-- <div class="dropdown-content">
-        <a href="">Overview</a>
-        <a href="">Pricing</a>
-        <a href="">Marketplace</a>
-        <a href="">Features</a>
-        <a href="">Integrations</a>
-      </div>  -->
+      </figure> 
       <!-- </section> -->
-        <!-- <section>
-          <div>Company</div>
-          <div class="dropdown-content">
-            <a href="">About</a>
-            <a href="">Team</a>
-            <a href="">Blog</a>
-            <a href="">Careers</a>
+      <!-- TODO Build out the mobile/desktop drop down -->
+         <section class="drop-down-selection">
+          <div>
+            <p>Products</p>
+            <div class="toggle-status"></div>
           </div>
-        </section> -->
-        <!-- <section> -->
-          <!-- <div></div> -->
-          <!-- Connect -->
-          <!-- <div class="dropdown-content">
+          <div class="dropdown-content">
+            <a href="">Overview</a>
+            <a href="">Pricing</a>
+            <a href="">Marketplace</a>
+            <a href="">Features</a>
+            <a href="">Integrations</a>
+          </div> 
+        </section> 
+         <section class="drop-down-selection">
+          <div>
+            <p>Company</p>
+            <div class="toggle-status"></div>
+          </div>
+          <div class="dropdown-content">
             <a href="">Contact</a>
             <a href="">Newsletter</a>
             <a href="">LinkedIn</a>
-          </div> -->
-        <!-- </section>
-      <div><a href="">Login</a></div>
-      <div><a href="">Sign Up</a></div> -->
+          </div>
+        </section> 
+        <section class="drop-down-selection">
+          <div><p>Connect</p>
+            <div class="toggle-status"></div>
+          </div>
+          <div class="dropdown-content">
+            <a href="">Contact</a>
+            <a href="">Newsletter</a>
+            <a href="">LinkedIn</a>
+          </div>
+        </section> 
+      <div class="href-btn" data-acct-btn="login"><a href="#">Login</a></div>
+      <div class="href-btn" data-acct-btn="sign-up"><a href="#">Sign Up</a></div> 
     </nav>
   <!-- mission statement -->
   <div>
@@ -59,10 +70,10 @@
     <h2>Grow your audience and build your online brand</h2>
     <!-- Btn's -->
     <div class="btn-container">
-      <div class=href-btn>
+      <div class="href-btn">
         <p>Start for Free</p>   
       </div>
-      <div class=href-btn>
+      <div class="href-btn">
         <p>Learn More</p>
       </div>
     </div>
@@ -75,17 +86,22 @@
 <section>
   <h1>Designed for the future</h1>
   <!-- <img src="images/illustration-editor-mobile.svg" data-image="designUI"></img> -->
-  <div data-image="designUI"></div>
-  <h2>Introducing an extensible editor</h2>
-  <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.</p>
-  
-  <h2>Robust content management</h2> 
-  <p>  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-    by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
-</section>
+  <div class="content-container">
+    <div data-image="designUI"></div>
+    <!-- Sub-section -->
+  <div class="sub-section">
+    <h2>Introducing an extensible editor</h2>
+    <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+    The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+    videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+    change the looks of a blog.</p>
+    <h2>Robust content management</h2> 
+    <p>  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+      by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+  </div>
+  </section>
+  </div>
+
 <!-- "State of the Art Archetecture" -->
 <section>
   <!-- <div img data-image="phones"></div> -->
@@ -99,14 +115,16 @@
 <!-- "Free Simple Open Tooling" -->
   <section>
     <div img data-image="laptop"></div>
-    <h2>Free, open, simple</h2>
-    <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-    features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-    and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
-    
-    <h2>Powerful tooling</h2>
-    <p> Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-    capable of producing even the most complicated sites.</p>
+    <!-- Sub-section -->
+    <div class="sub-section">
+      <h2>Free, open, simple</h2>
+      <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+      features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+      and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+      <h2>Powerful tooling</h2>
+      <p> Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+      capable of producing even the most complicated sites.</p>
+    </div>
   </section>
 </main>
   
